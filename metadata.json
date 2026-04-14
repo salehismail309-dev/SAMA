@@ -1,6 +1,6 @@
 {
-  "name": "RemoteLink",
-  "description": "A lightweight web-based remote desktop tool for browser session sharing and task collaboration using WebRTC.",
+  "name": "SMIA",
+  "description": "أداة خفيفة لمشاركة جلسات المتصفح والتعاون في المهام في الوقت الفعلي باستخدام WebRTC، بتصميم فرعوني مميز.",
   "requestFramePermissions": [],
   "majorCapabilities": []
 }

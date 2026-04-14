@@ -1,1 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Cinzel:wght@400;700;900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cinzel", serif;
+  
+  --color-gold: #D4AF37;
+  --color-lapis: #003399;
+  --color-papyrus: #F5F5DC;
+  --color-sand: #C2B280;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0a0a] text-zinc-100;
+    direction: rtl;
+  }
+}
+
+.pharaonic-border {
+  border: 2px solid var(--color-gold);
+  position: relative;
+}
+
+.pharaonic-border::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 1px solid var(--color-gold);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5D76E 50%, #D4AF37 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F5D76E 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
